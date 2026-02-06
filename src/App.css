@@ -1,0 +1,19 @@
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
+.wrap{
+  display: flex;
+  justify-content: space-between;
+}
+
+.content{
+    width: 900px;
+    height: 100%  ;
+    background: #1e1e1f;
+    border-radius: 20px;
+    border: 1px solid hsl(0, 0%, 22%);
+    margin-block: 60px;
+}
