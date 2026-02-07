@@ -1,5 +1,6 @@
 import './App.css'
 import Aside from './components/aside'
+import MenuBar from './components/menuBar'
 
 function App() {
 
@@ -8,7 +9,9 @@ function App() {
      <div className="wrap container">
         <Aside />
         <div className="content">
-          salom
+          <header>
+            <MenuBar />
+          </header>
         </div>
      </div>
     </>
