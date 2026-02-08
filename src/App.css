@@ -4,6 +4,12 @@
     margin-inline: auto;
 }
 
+.containerRoute{
+    width: 100%;
+    max-width: 840px;
+    margin: 0 auto;
+}
+
 .wrap{
   display: flex;
   justify-content: space-between;
@@ -21,4 +27,8 @@
 header{
     display: flex;
     justify-content: end;
+}
+
+main{
+    padding-bottom: 50px;
 }
