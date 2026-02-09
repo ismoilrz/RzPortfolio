@@ -3,6 +3,9 @@
 }
 
 aside{
+    top: 60px;
+    position: sticky;
+    align-self: flex-start;
     width: 275px;
     height: 760px;
     background: #1e1e1f;

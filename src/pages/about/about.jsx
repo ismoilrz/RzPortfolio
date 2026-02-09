@@ -1,4 +1,5 @@
 import "./about.css"
+import Clients from "./aboutClients";
 import Testimonials from "./aboutTestimonials";
 
 const About = () => {
@@ -19,9 +20,8 @@ const About = () => {
                 corrupti magni iure, quaerat non ex laborum soluta ad beatae 
                 corporis vero rerum consequatur? Atque.
             </p>
-            <div className="aboutTes">
                 <Testimonials />
-            </div>
+                <Clients />
         </div>
     
     </>

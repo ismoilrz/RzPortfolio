@@ -25,3 +25,38 @@ export const TestimonialsData = [
         info: "Coming con ..."
     },
 ]
+
+export const ClientsData = [
+    {
+        id: 1,
+        client: "Coming son ...",
+    },
+    {
+        id: 2,
+        client: "Coming son ...",
+    },
+    {
+        id: 3,
+        client: "Coming son ...",
+    },
+    {
+        id: 4,
+        client: "Coming son ...",
+    },
+    {
+        id: 5,
+        client: "Coming son ...",
+    },
+    {
+        id: 6,
+        client: "Coming son ...",
+    },
+    {
+        id: 7,
+        client: "Coming son ...",
+    },
+    {
+        id: 8,
+        client: "Coming son ...",
+    },
+]
