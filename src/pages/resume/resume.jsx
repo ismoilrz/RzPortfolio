@@ -1,6 +1,6 @@
 import eduLogo from "../../assets/education.svg";
 import MySkills from "./mySkills";
-
+import {motion} from 'framer-motion'
 import "./resume.css"
 
 const Resume = () => {
@@ -13,25 +13,59 @@ const Resume = () => {
                     <div className="educationLogo">
                         <img src={eduLogo} alt="img" />
                     </div>
-                    <h3>Education & Certification</h3>
+                    <motion.h3
+                        initial={{opacity: 0, y: -60}} animate={{opacity: 1, y: 0}} exit={{opacity: 0, y: 40}} transition={{duration: 0.7}} 
+                       >
+                        Education & Certification
+                    </motion.h3>
                 </div>
 
                 <div className="educationList1">
                     <div className="list1Title">
                         <div className="list1Check"></div>
-                        <h5>IT Park</h5>
+                        <motion.h5
+                            initial={{opacity: 0, x: 60}}
+                            animate={{opacity: 1, x: 0}}
+                            exit={{opacity: 0, x: 20}}
+                            transition={{duration: 0.1}}
+                        >IT Park</motion.h5>
                     </div>
-                    <span>Jun 2025</span>
-                    <p>Front-End Programming</p>
+                    <motion.span
+                        initial={{opacity: 0, x: 60}}
+                        animate={{opacity: 1, x: 0}}
+                        exit={{opacity: 0, x: 20}}
+                        transition={{duration: 0.3}}
+                    >Jun 2025</motion.span>
+                    <motion.p
+                        initial={{opacity: 0, x: 60}}
+                            animate={{opacity: 1, x: 0}}
+                            exit={{opacity: 0, x: 20}}
+                            transition={{duration: 0.5}}
+                    >Front-End Programming</motion.p>
                 </div>
                 
                 <div className="educationList1">
                     <div className="list1Title">
                         <div className="list1Check"></div>
-                        <h5>Coursera</h5>
+                        <motion.h5
+                            initial={{opacity: 0, x: 60}}
+                            animate={{opacity: 1, x: 0}}
+                            exit={{opacity: 0, x: 20}}
+                            transition={{duration: 0.1}}
+                        >Coursera</motion.h5>
                     </div>
-                    <span>Jul 2025</span>
-                    <p>Meta Front-End Developer</p>
+                    <motion.span
+                         initial={{opacity: 0, x: 60}}
+                        animate={{opacity: 1, x: 0}}
+                        exit={{opacity: 0, x: 20}}
+                        transition={{duration: 0.3}}
+                    >Jul 2025</motion.span>
+                    <motion.p
+                         initial={{opacity: 0, x: 60}}
+                        animate={{opacity: 1, x: 0}}
+                        exit={{opacity: 0, x: 20}}
+                        transition={{duration: 0.5}}
+                    >Meta Front-End Developer</motion.p>
                 </div>
             </div>
 

@@ -22,6 +22,9 @@ function App() {
             </Routes>
           </main>
         </div>
+        <div className="bottonMenu">
+          <MenuBar />
+        </div>
      </div>
     </>
   )

@@ -1,6 +1,5 @@
 import DevLanguages from "./devLanguages";
-import DevTools from "./devTools";
-import Languages from "./languages";
+
 import Technologies from "./technologies";
 import "./resume.css"
 
@@ -11,8 +10,6 @@ const MySkills = () => {
             <div className="skillsMain">
                 <DevLanguages />
                 <Technologies />
-                <DevTools />
-                <Languages />
             </div>
         </section>
     </>

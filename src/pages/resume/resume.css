@@ -13,6 +13,20 @@
     position: relative;
 }
 
+@media (max-width: 420px) {
+    .resumeTitle {
+        top: 10px;
+        left: 15px;
+        font-size: 28px;
+    }
+
+    .resumeTitle::after {
+        bottom: -14px !important;
+        height: 5px !important;
+        width: 35px !important;
+    }
+}
+
 .resumeTitle::after{
     content: "";
     position: absolute;
@@ -29,6 +43,13 @@
     margin-top: 5px;
 }
 
+@media (max-width: 420px) {
+    .education {
+        margin-top: 70px;
+        margin-inline: 15px;
+    }
+}
+
 .educationTitle{
     display: flex;
     align-items: center;
@@ -42,6 +63,12 @@
     color: #fafafa;
 }
 
+@media (max-width: 420px) {
+    .educationTitle h3{
+        font-size: 20px;
+    }
+}
+
 .educationLogo{
      display: flex;
     align-items: center;
@@ -51,6 +78,18 @@
     background-color: #252527;
     border-radius: 14px;
     position: relative; 
+}
+
+@media (max-width: 420px) {
+    .educationLogo {
+        width: 42px;
+        height: 42px;
+    }
+
+    .educationLogo::after{
+        top: 42px !important;
+        height: 140px !important;
+    }
 }
 
 .educationLogo::after{
@@ -102,6 +141,12 @@
     gap: 40px;
 }
 
+@media (max-width: 420px) {
+    .list1Title{
+        gap: 36px;
+    }
+}
+
 .educationList1 h5{
     font-family: var(--fond);
     font-size: 16px;
@@ -121,6 +166,23 @@
     color: #d6d6d6;
 }
 
+@media (max-width: 420px) {
+    .educationList1 h5{
+        font-size: 14px;
+        /* margin-left: 44px; */
+    }
+
+    .educationList1 span{
+        font-size: 14px;
+        margin-left: 44px;
+    }
+
+    .educationList1 p{
+        font-size: 14px;
+        margin-left: 44px;
+    }
+}
+
 .list1Check{
     width: 8px;
     height: 8px;
@@ -130,7 +192,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
+}
+
+@media (max-width: 420px) {
+    .list1Check{
+        margin-left: -2px;
+    }
 }
 
 .list1Check::before{
@@ -150,22 +217,45 @@
     color: #fafafa;
 }
 
+@media (max-width: 420px) {
+    .mySkillsTitle {
+        margin-left: 15px;
+        font-size: 22px;
+    }
+}
+
 .devLangguages{
     width: 840px;
-    height: 220px;
+    height: 240px;
     background-color: #252527;
     border-radius: 14px;
     position: relative; 
     box-shadow: 5px 5px 35px rgba(0, 0, 0, 0.266);
 }
 
+@media (max-width: 420px) {
+    .devLangguages {
+        width: 94%;
+        margin-inline: auto;
+        height: 200px;
+    }
+}
+
 .devLangguages1{
     width: 840px;
-    height: 430px;
+    height: 520px;
     background-color: #252527;
     border-radius: 14px;
     position: relative; 
     box-shadow: 5px 5px 35px rgba(0, 0, 0, 0.266);
+}
+
+@media (max-width: 420px) {
+    .devLangguages1 {
+        width: 94%;
+        height: 450px;
+        margin-inline: auto;
+    }
 }
 
 .devLangguages1::before{
@@ -218,7 +308,7 @@
     margin-left: 30px;
     padding-top: 30px;
     font-family: var(--fond);
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 500;
     color: #ffdb70;
 }
@@ -227,9 +317,23 @@
     margin-left: 30px;
     padding-top: 30px;
     font-family: var(--fond);
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 500;
     color: #ffdb70;
+}
+
+@media (max-width: 420px) {
+    .devLangguages1 h5{
+        font-size: 20px;
+        margin-left: 20px;
+        padding-top: 20px;
+    }
+
+    .devLangguages h5 {
+        font-size: 20px;
+        margin-left: 20px;
+        padding-top: 20px;
+    }
 }
 
 .devLangList{
@@ -241,11 +345,25 @@
     margin-top: 30px;   
 }
 
+@media (max-width: 420px) {
+    .devLangList {
+        margin-left: 22px;
+        margin-top: 24px;
+    }
+}
+
 #p{
     width: 780px;
     height: 8px;
     border-radius: 999px;
     overflow: hidden;
+}
+
+@media (max-width: 420px) {
+    #p {
+        width: 92%;
+        height: 9px;
+    }
 }
 
 #p::-webkit-progress-bar{

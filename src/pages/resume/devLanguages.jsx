@@ -10,7 +10,7 @@ const DevLanguages = () => {
             </div>
              <div className="devLangList">
                 <span>TypeScript</span>
-                <progress id="p" value="30" max="100"></progress>
+                <progress id="p" value="35" max="100"></progress>
             </div>
         </section>
     </>

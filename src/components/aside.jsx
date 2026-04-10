@@ -9,8 +9,10 @@ const Aside = () => {
             <div className="asideImg">
                 <img src={MyAvatar} alt="MyAvatar" />
             </div>
-            <h1>Ro'zmetov Ismoil</h1>
+           <div className="name">
+             <h1>Ro'zmetov Ismoil</h1>
             <span>Web Developer</span>
+           </div>
 
             <ASideInfo />
         </aside>

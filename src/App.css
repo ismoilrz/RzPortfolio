@@ -13,6 +13,16 @@
 .wrap{
   display: flex;
   justify-content: space-between;
+  position: relative;
+}
+
+@media (max-width: 420px) {
+    .wrap {
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+        padding-inline: 15px;
+    }
 }
 
 .content{
@@ -24,11 +34,41 @@
     margin-block: 60px;
 }
 
+@media (max-width: 420px) {
+    .content {
+        width: 100%;
+        margin-block: 5px 76px;
+    }
+}
+
 header{
     display: flex;
     justify-content: end;
 }
 
+@media (max-width: 420px) {
+    header{
+        display: none;
+    }
+}
+
 main{
     padding-bottom: 50px;
+}
+
+@media (max-width: 420px) {
+    main {
+        padding-bottom: 25px;
+    }
+}
+
+.bottonMenu {
+    display: none;
+}
+
+@media (max-width: 420px) {
+    .bottonMenu {
+        display: flex;
+        z-index: 1000;
+    }
 }

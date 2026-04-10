@@ -1,0 +1,231 @@
+.contactTitle{
+    position: absolute;
+    top: -50px;
+    font-family: var(--fond);
+    font-size: 32px;
+    font-weight: 600;
+    color: #fafafa;
+
+    position: relative;
+}
+
+@media (max-width: 420px) {
+    .contactTitle {
+      top: 10px;
+      left: 10px;
+      font-size: 28px !important;
+    }
+
+    .contactTitle::after {
+      bottom: -14px !important;
+      height: 5px !important;
+      width: 35px !important;
+    }
+}
+
+.map {
+    height: 400px;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 420px) {
+    .map {
+        height: 250px;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 60px;
+    }
+}
+
+.contactTitle::after {
+     content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+
+    width: 40px;
+    height: 6px;
+    background: linear-gradient(90deg, #FFDB70, #ffae70 90%);
+    border-radius: 5px;
+}
+
+.contactForm h2{
+    font-family: var(--fond);
+    font-size: 24px;
+    color: #fafafa;
+    padding-block: 30px;
+}
+
+@media (max-width: 420px) {
+    .contactForm h2 {
+        margin-left: 15px;
+        font-size: 22px;
+    }
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+
+    width: 100%;
+}
+
+@media (max-width: 420px) {
+    form {
+        gap: 20px;
+    }
+    form input {
+        width: 92% !important;
+        height: 55px !important;
+    }
+
+    form textarea {
+        width: 92% !important;
+    }
+}
+
+form input {
+    width: 405px;
+    height: 60px;
+    outline: none;
+    background: #1b1b1b;
+    border: 1px solid hsl(0, 0%, 22%);
+    border-radius: 16px;
+    padding-left: 20px;
+
+    font-family: var(--fond);
+    font-size: 16px;
+    color: #fff;
+}
+
+form input::placeholder {
+    color: #d6d6d6b2;
+
+    font-family: var(--fond);
+    font-size: 16px;
+}
+
+form textarea {
+    resize: none;
+    width: 100%;
+    height: 150px;
+    outline: none;
+    background: #1b1b1b;
+    border: 1px solid hsl(0, 0%, 22%);
+    border-radius: 16px;
+    padding-left: 20px;
+    padding-top: 20px;
+
+    font-family: var(--fond);
+    font-size: 16px;
+    color: #fff;
+}
+
+form textarea::placeholder{
+    color: #d6d6d6b2;
+
+    font-family: var(--fond);
+    font-size: 16px;
+}
+
+form input:focus{
+    border-color: #FFDB70;
+}
+
+form textarea:focus{
+    border-color: #FFDB70;
+}
+
+.formBtn{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+@media (max-width: 420px) {
+    .formBtn {
+        justify-content: center;
+    }
+
+    .formBtn button {
+        width: 92% !important;
+        height: 50px !important;
+    }
+}
+
+.formBtn button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    width: 200px;
+    height: 55px;
+    border-radius: 14px;
+    border: none;
+    margin-top: 30px;
+    background-color: #252527;
+
+    font-family: var(--fond);
+    font-size: 18px;
+    font-weight: 600;
+    color: #FFDB70;
+
+    position: relative;
+}
+
+.formBtn button::after{
+      content:"";
+  position:absolute;
+  inset:0;
+  border-radius:14px;
+  pointer-events: none;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255,255,255,.10),
+      rgba(255,255,255,0) 40%
+    );
+
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+
+  padding: 2px;
+}
+
+.formBtn button:hover{
+    background: linear-gradient(135deg, #ffdb7037, #252527 60%);
+}
+
+.formBtn button:hover:after{
+       content:"";
+  position:absolute;
+  inset:0;
+  border-radius:14px;
+  pointer-events: none;
+
+  background:
+    linear-gradient(
+      135deg,
+      #FFDB70,
+      rgba(255,255,255,0) 60%
+    );
+
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+
+  padding: 2px;
+}
