@@ -13,6 +13,9 @@ const Aside = () => {
              <h1>Ro'zmetov Ismoil</h1>
             <span>Web Developer</span>
            </div>
+           <div className="asideBtn">
+            <button>∨</button>
+           </div>
 
             <ASideInfo />
         </aside>
