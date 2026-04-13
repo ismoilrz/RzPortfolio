@@ -1,4 +1,5 @@
 .userInfo {
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -15,19 +16,26 @@
 
 @media (max-width: 420px) {
     .userInfo {
-        padding-top: 18px;
         border: none;
+        padding-inline: 18px;
+        gap: 16px;
+    }
+
+    .infoMain {
+        border-block: 1px solid #383838;
+        padding-block: 18px;
+        gap: 18px;
+        /* width: 100%; */
     }
 
     
 }
 
-
-
 .infoList{
     display: flex;
     gap: 15px;
 }
+
 
 .userInfoLogo{
     display: flex;
@@ -38,6 +46,18 @@
     background-color: #252527;
     border-radius: 14px;
     position: relative; 
+}
+
+@media (max-width: 420px) {
+    .userInfoLogo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .userInfoLogo img{
+        width: 40%;
+        height: 40%;
+    }
 }
 
 .userInfoLogo::before{
@@ -83,5 +103,13 @@
 }
 
 .userSocials{
-    margin-top: 10px;
+    /* margin-top: 10px; */
+}
+
+@media (max-width: 420px) {
+    .userSocials {
+        display: flex;
+        align-items: start;
+        margin-bottom: 12px;
+    }
 }

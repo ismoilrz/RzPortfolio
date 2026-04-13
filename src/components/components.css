@@ -7,7 +7,7 @@ aside{
     position: sticky;
     align-self: flex-start;
     width: 275px;
-    height: 760px;
+    height: 730px;
     background: #1e1e1f;
     border-radius: 20px;
     border: 1px solid hsl(0, 0%, 22%);
@@ -27,6 +27,7 @@ aside{
 
 @media (max-width: 420px) {
     aside {
+        align-items: stretch;
         margin-block: 20px;
         width: 100%;
         height: 100%;
@@ -36,12 +37,11 @@ aside{
     }
 
     .asideInfo {
-       
         display: block;      
         max-height: 0;       
         overflow: hidden;    
         opacity: 0;          
-        transition: max-height 2s cubic-bezier(0, 0.2, 0.2, 2), opacity 0.3s ease;
+        transition: max-height 2s cubic-bezier(0, 0.2, 0.2, 2), opacity 0.2s ease;
     }
 
     .asideM {
@@ -69,7 +69,7 @@ aside{
 }
 
 .asideImg{
-    margin-block: 60px 30px;
+    margin-block: 40px 30px;
     margin-inline: auto;
     width: 150px;
     height: 150px;
