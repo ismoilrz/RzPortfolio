@@ -1,4 +1,10 @@
-.userInfo{
+.userInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.infoMain{
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -9,9 +15,14 @@
 
 @media (max-width: 420px) {
     .userInfo {
-        display: none;
+        padding-top: 18px;
+        border: none;
     }
+
+    
 }
+
+
 
 .infoList{
     display: flex;

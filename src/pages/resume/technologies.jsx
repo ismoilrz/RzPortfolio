@@ -14,19 +14,23 @@ const Technologies = () => {
             </div>
              <div className="devLangList">
                 <span>GitHub</span>
-                <progress id="p" value="30" max="100"></progress>
+                <progress id="p" value="40" max="100"></progress>
             </div>
              <div className="devLangList">
                 <span>React</span>
-                <progress id="p" value="65" max="100"></progress>
-            </div>
-             <div className="devLangList">
-                <span>AntDesign</span>
                 <progress id="p" value="70" max="100"></progress>
             </div>
              <div className="devLangList">
+                <span>AntDesign</span>
+                <progress id="p" value="85" max="100"></progress>
+            </div>
+             <div className="devLangList">
                 <span>Material UI</span>
-                <progress id="p" value="80" max="100"></progress>
+                <progress id="p" value="85" max="100"></progress>
+            </div>
+             <div className="devLangList">
+                <span>Tailwind</span>
+                <progress id="p" value="50" max="100"></progress>
             </div>
         </section>
     </>

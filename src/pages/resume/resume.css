@@ -243,7 +243,7 @@
 
 .devLangguages1{
     width: 840px;
-    height: 520px;
+    height: 580px;
     background-color: #252527;
     border-radius: 14px;
     position: relative; 
@@ -253,7 +253,7 @@
 @media (max-width: 420px) {
     .devLangguages1 {
         width: 94%;
-        height: 450px;
+        height: 510px;
         margin-inline: auto;
     }
 }

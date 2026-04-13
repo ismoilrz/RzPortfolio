@@ -2,11 +2,14 @@ import "./components.css"
 import MyAvatar from "../assets/my-avatar.png"
 
 import ASideInfo from "./aside/asideInfo";
+import { useState } from "react";
 
 const Aside = () => {
+    const [myInfoOpen, setMyInfoOpen] = useState(false)
     return <>
         <aside>
-            <div className="asideImg">
+            <div className="asideM">
+                <div className="asideImg">
                 <img src={MyAvatar} alt="MyAvatar" />
             </div>
            <div className="name">
@@ -14,10 +17,14 @@ const Aside = () => {
             <span>Web Developer</span>
            </div>
            <div className="asideBtn">
-            <button>∨</button>
+            <button onClick={() => setMyInfoOpen(!myInfoOpen)}>∨</button>
            </div>
-
-            <ASideInfo />
+            </div>
+        
+            <div className={`asideInfo ${myInfoOpen ? 'open' : ""}`}>
+                <ASideInfo />
+            </div>
+           
         </aside>
     </>
 }

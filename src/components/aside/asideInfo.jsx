@@ -5,7 +5,8 @@ import "./aside.css"
 const ASideInfo = () => {
     return <>
         <div className="userInfo">
-                {AsideData.map((item, index) => (
+                <div className="infoMain">
+                    {AsideData.map((item, index) => (
                     <div className="infoList">
                         <div key={index} className="userInfoLogo">
                             <img src={item.logo} alt={item.title} />
@@ -16,6 +17,7 @@ const ASideInfo = () => {
                         </div>
                     </div>
                 ))}
+                </div>
                 <div className="userSocials">
                     <SocialMedia />
                 </div>

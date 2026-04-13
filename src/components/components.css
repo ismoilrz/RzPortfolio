@@ -29,27 +29,48 @@ aside{
     aside {
         margin-block: 20px;
         width: 100%;
+        height: 100%;
         position: static;
         height: auto;
-        flex-direction: row;
-        align-items: start;
+        transition: 0.2s ease-out;
+    }
+
+    .asideInfo {
+       
+        display: block;      
+        max-height: 0;       
+        overflow: hidden;    
+        opacity: 0;          
+        transition: max-height 2s cubic-bezier(0, 0.2, 0.2, 2), opacity 0.3s ease;
+    }
+
+    .asideM {
+        display: flex;
+        gap: 4%;
         justify-content: space-between;
-        gap: 20px;
+        width: 100%;
     }
     .name{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: start;
+        justify-content: start;
+        align-items: center;
     }
     .name h1{
+        text-align: center;
         font-size: 22px;
         margin-top: 20px;
+    }
+
+    .open {
+       max-height: 500px;   
+        opacity: 1;          
     }
 }
 
 .asideImg{
     margin-block: 60px 30px;
+    margin-inline: auto;
     width: 150px;
     height: 150px;
     background-color: hsl(0, 0%, 22%);
@@ -65,7 +86,7 @@ aside{
         margin-block: auto;
         width: 100px;
         height: 100px;
-        margin-left: 6%;
+        margin-left: 4%;
     }
 }
 
@@ -180,6 +201,7 @@ aside span{
         border-bottom-left-radius: 15px;
         border: none;
         color: #FFDB70;
+        /* margin-left: 8px; */
     }
 
     .asideBtn button::after {
@@ -203,5 +225,32 @@ aside span{
           mask-composite: exclude;
 
   padding: 2px;
+    }
+
+    .asideBtn button:hover {
+         background: linear-gradient(135deg, #ffdb704e, #252527 60%);
+    }
+
+    .asideBtn button:hover::after{
+         content:"";
+  position:absolute;
+  inset:0;
+  border-bottom-left-radius: 15px;
+  pointer-events: none;
+
+  background:
+    linear-gradient(
+      135deg,
+      #FFDB70,
+      rgba(255,255,255,0) 60%
+    );
+
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+
+  padding: 1.5px;
     }
  }
