@@ -16,3 +16,13 @@ a{
 body{
   background: hsl(0, 0%, 7%);
 }
+
+::selection {
+    background-color: #ffdb70; 
+    color: #000;             
+}
+
+button, a {
+    /* Moviy soyani shaffof qilib qo'yadi */
+    -webkit-tap-highlight-color: transparent;
+}
