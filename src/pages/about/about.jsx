@@ -29,6 +29,10 @@ const About = () => {
                 corrupti magni iure, quaerat non ex laborum soluta ad beatae 
                 corporis vero rerum consequatur? Atque.
             </p>
+
+            <div className="earth">
+                <h2>Uzbekistan</h2>
+            </div>
                 <Testimonials />
                 <Clients />
         </div>
