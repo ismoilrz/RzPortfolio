@@ -75,12 +75,13 @@ aside{
 }
 
 .asideImg{
-    margin-block: 40px 30px;
+    margin-block: 30px 30px;
     margin-inline: auto;
-    width: 150px;
-    height: 150px;
+    width: 190px;
+    height: 170px;
     background-color: hsl(0, 0%, 22%);
     border-radius: 30px;
+    overflow: hidden;
 
     display: flex;
     align-items: center;

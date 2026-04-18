@@ -1,5 +1,5 @@
 import "./components.css"
-import MyAvatar from "../assets/my-avatar.png"
+import MyAvatar from "../assets/des.jpg"
 
 import ASideInfo from "./aside/asideInfo";
 import { useState } from "react";
