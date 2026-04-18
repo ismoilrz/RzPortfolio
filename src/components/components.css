@@ -40,14 +40,15 @@ aside{
         display: block;      
         max-height: 0;       
         overflow: hidden;    
-        opacity: 0;          
-        transition: max-height 2s cubic-bezier(0, 0.2, 0.2, 2), opacity 0.2s ease;
+        opacity: 0;     
+        transition: 0.3s ease-in-out;     
+        /* transition: max-height 2s cubic-bezier(0, 0.2, 0.2, 2), opacity 0.2s ease; */
     }
 
     .asideM {
-        display: flex;
-        gap: 4%;
-        justify-content: space-between;
+        display: flex !important;
+        /* gap: 4%; */
+        justify-content: space-between !important;
         width: 100%;
     }
     .name{
@@ -55,11 +56,16 @@ aside{
         flex-direction: column;
         justify-content: start;
         align-items: center;
+        margin-right: 7%;
     }
     .name h1{
         text-align: center;
         font-size: 22px;
         margin-top: 20px;
+    }
+
+    aside span {
+        margin-block: 10px 20px !important;
     }
 
     .open {
@@ -83,7 +89,7 @@ aside{
 
 @media (max-width: 420px) {
     .asideImg{
-        margin-block: auto;
+        margin-block: 10px;
         width: 100px;
         height: 100px;
         margin-left: 4%;

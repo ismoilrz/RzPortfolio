@@ -2,6 +2,7 @@ import eduLogo from "../../assets/education.svg";
 import MySkills from "./mySkills";
 import {motion} from 'framer-motion'
 import "./resume.css"
+import SkillsContent from "./skillsContent";
 
 const Resume = () => {
     return <>
@@ -68,6 +69,8 @@ const Resume = () => {
                     >Meta Front-End Developer</motion.p>
                 </div>
             </div>
+
+            <SkillsContent />
 
             <MySkills />
             

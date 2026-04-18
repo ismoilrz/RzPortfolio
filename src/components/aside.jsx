@@ -13,7 +13,7 @@ const Aside = () => {
                 <img src={MyAvatar} alt="MyAvatar" />
             </div>
            <div className="name">
-             <h1>Ro'zmetov Ismoil</h1>
+             <h1>Ismoil Dev {'</>'}</h1>
             <span>Web Developer</span>
            </div>
            <div className="asideBtn">

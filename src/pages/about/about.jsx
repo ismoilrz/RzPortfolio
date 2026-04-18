@@ -25,9 +25,7 @@ const About = () => {
                 quae, impedit aliquid! Consectetur eos officia quasi adipisci eius 
                 aliquam tempora. Nam dignissimos nisi error explicabo fugit est 
                 pariatur voluptatum repellendus distinctio, doloribus, ullam quasi 
-                nulla tempora illum voluptas maxime veritatis. Asperiores ipsam, 
-                corrupti magni iure, quaerat non ex laborum soluta ad beatae 
-                corporis vero rerum consequatur? Atque.
+                nulla tempora illum voluptas maxime veritatis.
             </p>
 
             <div className="earth">

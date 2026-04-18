@@ -7,7 +7,7 @@ import asideLogo4 from "../assets/location.svg";
 
 /////////////// Aside socials IMG ///////////////
 import telegram from "../assets/telegram.svg";
-import gitHub from "../assets/github.svg";
+import gitHub from "../assets/githubas.svg";
 import instagram from "../assets/instagram.svg";
 
 //pathes

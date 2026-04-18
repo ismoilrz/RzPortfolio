@@ -381,3 +381,73 @@
     flex-direction: column;
     gap: 40px;
 }
+
+.skillsContent {
+    background: linear-gradient(90deg,#0c0c0c, #1e1e1f 40%);
+    border-radius: 14px;
+    padding: 10px;
+    margin-top: 40px;
+    width: 100%;
+    /* height: auto; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    position: relative;
+}
+
+@media (max-width: 420px) {
+    .skillsContent {
+        background: linear-gradient(145deg, #000000, #1e1e1f 40%);
+        width: 94%;
+        margin-inline: auto;
+        justify-content: center;
+        gap: 16px;
+        margin-top: 60px;
+    }
+}
+
+.skillsContent::before {
+     content:"";
+  position:absolute;
+  inset:0;
+  border-radius: 14px;
+  pointer-events: none;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ffdb70,
+      rgba(255,255,255,0) 40%
+    );
+
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+
+  padding: 0.4px;
+}
+
+.skill {
+    width: 26px;
+    height: 26px;
+    background-color: transparent;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+@media (max-width: 420px) {
+    .skill{
+        width: 22px;
+        height: 22px;
+    }
+}
+
+.skill img {
+    width: 90%;
+    height: 90%;
+}

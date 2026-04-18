@@ -7,8 +7,8 @@ const ASideInfo = () => {
         <div className="userInfo">
                 <div className="infoMain">
                     {AsideData.map((item, index) => (
-                    <div className="infoList">
-                        <div key={index} className="userInfoLogo">
+                    <div key={index} className="infoList">
+                        <div className="userInfoLogo">
                             <img src={item.logo} alt={item.title} />
                         </div>
                         <div className="userInfoText">
