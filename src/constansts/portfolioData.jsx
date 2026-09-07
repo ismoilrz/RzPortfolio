@@ -5,7 +5,7 @@ import portfolio from "../assets/portfolio.jpg";
 import wild from "../assets/wildberries.jpg";
 import uni from '../assets/unicorn.jpg';
 import axio from '../assets/axio.jpg'
-import lemonWares from '../assets/Rectangle 3.svg'
+import lemonWares from '../assets/lemonwares.jpg'
 
 ////////////// Portfolio Url ///////////////
 const rendcarLink = "https://rendcar-seven.vercel.app";
