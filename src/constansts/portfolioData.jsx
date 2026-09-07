@@ -2,21 +2,19 @@
 import rendcar from "../assets/rendcar.jpg";
 import allCars from "../assets/allcars.png";
 import portfolio from "../assets/portfolio.jpg";
-import sl from "../assets/sl.jpg";
-import reality from "../assets/reality.jpg";
 import wild from "../assets/wildberries.jpg";
 import uni from '../assets/unicorn.jpg';
 import axio from '../assets/axio.jpg'
+import lemonWares from '../assets/Rectangle 3.svg'
 
 ////////////// Portfolio Url ///////////////
 const rendcarLink = "https://rendcar-seven.vercel.app";
 const allcarsLink = "https://all-cars.vercel.app";
 const portfolioLink = "https://portfolio-ismoil-rz.vercel.app";
-const slLink = "https://sl-sand.vercel.app";
-const realityLink = "https://reality-gaming.vercel.app";
 const wildberries = "https://wildberries-u5co.vercel.app";
-const unicornLink = "https://unicorn-gwtk.vercel.app"
-const axioLink = 'https://axio-tube-wko5.vercel.app'
+const unicornLink = "https://unicorn-gwtk.vercel.app";
+const axioLink = 'https://axio-tube-wko5.vercel.app';
+const lemonwaresLink = 'https://lemonwares-topaz.vercel.app'
 
 
 
@@ -36,6 +34,18 @@ export const PortfolioData = [
     },
     {
         id: 2,
+        path: lemonwaresLink,
+        pick: lemonWares,
+        title: 'Lemon Wares',
+        tech: [
+            {id: 1, name: 'HTML'},
+            {id: 2, name: 'CSS'},
+            {id: 3, name: 'JS'},
+            {id: 4, name: 'AOS Animate'},
+        ]
+    },
+    {
+        id: 3,
         path: rendcarLink,
         pick: rendcar,
         title: "Car Dealer",
@@ -45,7 +55,7 @@ export const PortfolioData = [
         ]
     },
     {
-        id: 3,
+        id: 4,
         path: unicornLink,
         pick: uni,
         title: 'Unicorn',
@@ -56,7 +66,7 @@ export const PortfolioData = [
         ]
     },
     {
-        id: 4,
+        id: 5,
         path: allcarsLink,
         pick: allCars,
         title: "All Cars",
@@ -67,7 +77,7 @@ export const PortfolioData = [
         ]
     },
     {
-        id: 5,
+        id: 6,
         path: portfolioLink,
         pick: portfolio,
         title: "Portfolio 1+",
@@ -78,7 +88,7 @@ export const PortfolioData = [
         ]
     },
        {
-        id: 6,
+        id: 7,
         path: wildberries,
         pick: wild,
         title: "Wildberries",
@@ -89,24 +99,12 @@ export const PortfolioData = [
         ]
     },
     {
-        id: 7,
-        path: slLink,
-        pick: sl,
-        title: "SL Basic",
-        tech: [
-            {id: 1, name: 'REACT'},
-            {id: 2, name: 'JS'},
-        ]
-    },
-    {
         id: 8,
-        path: realityLink,
-        pick: reality,
-        title: "Reality Gaming",
+        path: "#",
+        pick: "https://media.istockphoto.com/id/1413057319/ru/векторная/скоро-марка.jpg?s=612x612&w=0&k=20&c=yCkjzMH5_B7S5R2R2SLpq4KmhAedXpG-7kkw1QYs5Fg=",
+        title: "Coming Soon",
         tech: [
-            {id: 1, name: 'HTML'},
-            {id: 2, name: 'CSS'},
-            {id: 3, name: 'JS'},
+            {id: 1, name: 'COMING SOON'}
         ]
     },
     {
