@@ -6,6 +6,7 @@ import wild from "../assets/wildberries.jpg";
 import uni from '../assets/unicorn.jpg';
 import axio from '../assets/axio.jpg'
 import lemonWares from '../assets/lemonwares.jpg'
+import tasteat from '../assets/tasteat.jpg'
 
 ////////////// Portfolio Url ///////////////
 const rendcarLink = "https://rendcar-seven.vercel.app";
@@ -14,7 +15,8 @@ const portfolioLink = "https://portfolio-ismoil-rz.vercel.app";
 const wildberries = "https://wildberries-u5co.vercel.app";
 const unicornLink = "https://unicorn-gwtk.vercel.app";
 const axioLink = 'https://axio-tube-wko5.vercel.app';
-const lemonwaresLink = 'https://lemonwares-topaz.vercel.app'
+const lemonwaresLink = 'https://lemonwares-topaz.vercel.app';
+const tasteatLink = 'https://tast-eat-three.vercel.app'
 
 
 
@@ -46,6 +48,18 @@ export const PortfolioData = [
     },
     {
         id: 3,
+        path: tasteatLink,
+        pick: tasteat,
+        title: 'Tast Eat',
+        tech: [
+            {id: 1, name: 'HTML'},
+            {id: 2, name: 'CSS'},
+            {id: 3, name: 'JS'},
+            {id: 4, name: 'AOS Animate'},
+        ]
+    },
+    {
+        id: 4,
         path: rendcarLink,
         pick: rendcar,
         title: "Car Dealer",
@@ -55,7 +69,7 @@ export const PortfolioData = [
         ]
     },
     {
-        id: 4,
+        id: 5,
         path: unicornLink,
         pick: uni,
         title: 'Unicorn',
@@ -66,7 +80,7 @@ export const PortfolioData = [
         ]
     },
     {
-        id: 5,
+        id: 6,
         path: allcarsLink,
         pick: allCars,
         title: "All Cars",
@@ -77,7 +91,7 @@ export const PortfolioData = [
         ]
     },
     {
-        id: 6,
+        id: 7,
         path: portfolioLink,
         pick: portfolio,
         title: "Portfolio 1+",
@@ -88,7 +102,7 @@ export const PortfolioData = [
         ]
     },
        {
-        id: 7,
+        id: 8,
         path: wildberries,
         pick: wild,
         title: "Wildberries",
@@ -96,15 +110,6 @@ export const PortfolioData = [
             {id: 1, name: 'REACT'},
             {id: 2, name: 'TS'},
             {id: 3, name: 'REACT QUERY'},
-        ]
-    },
-    {
-        id: 8,
-        path: "#",
-        pick: "https://media.istockphoto.com/id/1413057319/ru/векторная/скоро-марка.jpg?s=612x612&w=0&k=20&c=yCkjzMH5_B7S5R2R2SLpq4KmhAedXpG-7kkw1QYs5Fg=",
-        title: "Coming Soon",
-        tech: [
-            {id: 1, name: 'COMING SOON'}
         ]
     },
     {
